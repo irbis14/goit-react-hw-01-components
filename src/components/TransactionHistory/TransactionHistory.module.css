@@ -1,0 +1,37 @@
+.transactionHistory {
+  border-collapse: collapse;
+  margin-top: 25px;
+  margin-left: 50px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.transactionHistory thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  padding: 12px 15px;
+}
+
+.transactionHistory tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.transactionHistory tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.transactionHistory tbody tr:last-child {
+  border-bottom: 2px solid #009879;
+}
+
+/* Styles from  https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l*/

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
 const Profile = ({ avatar, name, tag, location, stats }) => {
@@ -26,5 +27,18 @@ const Profile = ({ avatar, name, tag, location, stats }) => {
     </div>
   );
 };
+
+Profile.defaulProps = {
+  avatar:
+    'https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png',
+};
+
+Profile.propType = PropTypes.shape({
+  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  stats: PropTypes.shape(PropTypes.number),
+});
 
 export default Profile;

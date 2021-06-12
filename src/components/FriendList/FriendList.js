@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import styles from './FriendList.module.css';
+import defaultImage from './defaultImage.jpg';
 
 const statusToggle = status => (status ? styles.isOnline : styles.isOffline);
 
@@ -14,6 +16,17 @@ const FriendList = ({ friends }) => {
       ))}
     </ul>
   );
+};
+
+FriendList.defaulProps = {
+  avatar: defaultImage,
+};
+
+FriendList.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool,
+  id: PropTypes.number,
 };
 
 export default FriendList;

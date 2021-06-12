@@ -2,10 +2,12 @@ import React from 'react';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import user from './components/Profile/user.json';
 import statisticalData from './components/Statistics/statistical-data.json';
 import friends from './components/FriendList/friends.json';
+import transactions from './components/TransactionHistory/transactions.json';
 
 import './App.css';
 
@@ -26,6 +28,8 @@ function App() {
       <Statistics stats={statisticalData} />
       <h2>Task 3. FriendList</h2>
       <FriendList friends={friends} />
+      <h2>Task 4. Transaction</h2>
+      <TransactionHistory items={transactions} />
     </>
   );
 }
